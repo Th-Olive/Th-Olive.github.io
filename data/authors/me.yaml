@@ -7,7 +7,7 @@ name:
   family: "OLIVE"
 postnominals: []
 status:
-  icon: "🛰️"
+  icon: "🤖"
 role: "R&D AI Engineer | Geospatial Deep Learning & Image Processing"
 email: "thomas.olive@aol.com"
 bio: "R&D AI Engineer specialising in geospatial deep learning and image processing.
@@ -17,12 +17,9 @@ affiliations:
   - name: "Diginove"
     url: ""
 links:
-  - icon: "at-symbol"
-    url: "mailto:thomas.olive@aol.com"
-    label: "E-mail Me"
-  - icon: "brands/github"
+  - icon: "custom/github"
     url: "https://github.com/Th-Olive"
-  - icon: "brands/linkedin"
+  - icon: "custom/linkedin"
     url: "https://www.linkedin.com/in/thomas-olive/"
   - icon: "custom/huggingface"
     url: "https://huggingface.co/Th-Olive"

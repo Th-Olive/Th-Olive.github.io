@@ -15,14 +15,14 @@ sections:
     id: hero
     content:
       username: me
-      greeting: "Hi, I'm"
-      show_status: true
-      show_scroll_indicator: true
+      greeting: "Hello, I'm"
+      show_status: false
+      show_scroll_indicator: false
       typewriter:
         enable: true
         prefix: "I build"
         strings:
-          - "geospatial deep learning models"
+          - "deep learning models"
           - "satellite image analysis"
           - "end-to-end ML pipelines"
           - "research-grade AI systems"
@@ -30,14 +30,14 @@ sections:
         delete_speed: 40
         pause_time: 2500
       cta_buttons:
-        - text: View My Work
-          url: "#projects"
-          icon: arrow-down
         - text: Get In Touch
           url: "#contact"
           icon: envelope
+        - text: Skills
+          url: "#skills"
+          icon: arrow-down
     design:
-      style: centered
+      style: split
       avatar_shape: circle
       animations: true
       background:
@@ -45,7 +45,7 @@ sections:
           light: "#fafafa"
           dark: "#0a0a0f"
       spacing:
-        padding: ["6rem", "0", "4rem", "0"]
+        padding: ["2rem", "0", "2rem", "0"]
 
   # Experience Timeline
   - block: resume-experience
