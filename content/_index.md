@@ -22,10 +22,10 @@ sections:
         enable: true
         prefix: "I build"
         strings:
-          - "full-stack web apps"
-          - "scalable APIs"
-          - "beautiful UIs"
-          - "open source tools"
+          - "geospatial deep learning models"
+          - "satellite image analysis"
+          - "end-to-end ML pipelines"
+          - "research-grade AI systems"
         type_speed: 70
         delete_speed: 40
         pause_time: 2500
@@ -46,13 +46,102 @@ sections:
           dark: "#0a0a0f"
       spacing:
         padding: ["6rem", "0", "4rem", "0"]
-  
+
+  # Experience Timeline
+  - block: resume-experience
+    id: experience
+    content:
+      title: Experience
+      date_format: Jan 2006
+      items:
+        - title: R&D AI Engineer
+          company: Diginove
+          company_url: ''
+          company_logo: ''
+          location: Montpellier, France
+          date_start: '2024-09-01'
+          date_end: ''
+          description: |2-
+            * Design and deployment of deep learning models for satellite image processing
+            * Conditional GAN (SENWISE project) for thermal super-resolution: Sentinel-3 × Landsat (1000 m → 30 m, SSIM ≈ 98.8%)
+            * ESA-funded research; full ownership from architecture to production inference pipeline
+            * Tech stack: PyTorch, GDAL, Rasterio, Python, Docker
+        - title: Research Intern — Computer Vision & NLP
+          company: Synchromedia Lab, ETS Montreal
+          company_url: ''
+          company_logo: ''
+          location: Montreal, Canada
+          date_start: '2024-01-01'
+          date_end: '2024-08-31'
+          description: |2-
+            * Designed Attention–NMF model: CNN attention encoder + NMF decoder with linear independence constraint
+            * Task: handwritten text extraction from ancient multispectral document images
+            * Work submitted to ICASSP 2025
+            * Tech stack: PyTorch, NumPy, Python
+        - title: Automation Intern
+          company: Bioderma / Naos Group
+          company_url: ''
+          company_logo: ''
+          location: Lyon, France
+          date_start: '2021-05-01'
+          date_end: '2021-08-31'
+          description: |2-
+            * Automated quality-control reporting pipeline for production lines
+            * Reduced manual reporting time significantly through scripted data aggregation
+            * Tech stack: Python, Excel automation, PLC data interfaces
+    design:
+      columns: '1'
+      background:
+        color:
+          light: "#ffffff"
+          dark: "#0d0d12"
+      spacing:
+        padding: ["4rem", "0", "4rem", "0"]
+
+  # Education Timeline
+  - block: resume-experience
+    id: education
+    content:
+      title: Education
+      date_format: Jan 2006
+      items:
+        - title: M.Sc. Electrical Engineering (Research Profile)
+          company: École de Technologie Supérieure (ETS Montreal)
+          company_url: ''
+          company_logo: ''
+          location: Montreal, Canada
+          date_start: '2022-09-01'
+          date_end: '2024-08-31'
+          description: |2-
+            * Specialisation in image processing, computer vision, and applied deep learning
+            * Research thesis: multispectral document analysis using attention-based NMF
+            * Coursework: Signal Processing, Machine Learning, Computer Vision, Optimization
+        - title: Engineering Degree — Robotics & Computer Science
+          company: ECAM Lyon
+          company_url: ''
+          company_logo: ''
+          location: Lyon, France
+          date_start: '2018-09-01'
+          date_end: '2022-06-30'
+          description: |2-
+            * Generalist engineering curriculum with specialisation in robotics and IT
+            * Final year focus: embedded systems, automation, signal processing
+            * International exchange: ETS Montreal (2022–2024)
+    design:
+      columns: '1'
+      background:
+        color:
+          light: "#f5f5f5"
+          dark: "#08080c"
+      spacing:
+        padding: ["4rem", "0", "4rem", "0"]
+
   # Filterable Portfolio - Alpine.js powered project filtering
   - block: portfolio
     id: projects
     content:
       title: "Featured Projects"
-      subtitle: "A selection of my recent work"
+      subtitle: "A selection of my research and engineering work"
       count: 0
       filters:
         folders:
@@ -60,18 +149,13 @@ sections:
       buttons:
         - name: All
           tag: '*'
-        - name: Full-Stack
-          tag: Full-Stack
-        - name: Frontend
-          tag: Frontend
-        - name: Backend
-          tag: Backend
+        - name: Research
+          tag: Research
+        - name: Geospatial
+          tag: Geospatial
+        - name: NLP
+          tag: NLP
       default_button_index: 0
-      # Archive link auto-shown if more projects exist than 'count' above
-      # archive:
-      #   enable: false  # Set to false to explicitly hide
-      #   text: "Browse All"  # Customize text
-      #   link: "/work/"  # Custom URL
     design:
       columns: 3
       background:
@@ -80,54 +164,54 @@ sections:
           dark: "#0d0d12"
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
-  
+
   # Visual Tech Stack - Icons organized by category
   - block: tech-stack
     id: skills
     content:
       title: "Tech Stack"
-      subtitle: "Technologies I use to build things"
+      subtitle: "Tools and technologies I work with"
       categories:
-        - name: Languages
+        - name: AI / ML
           items:
-            - name: TypeScript
-              icon: devicon/typescript
-            - name: JavaScript
-              icon: devicon/javascript
+            - name: PyTorch
+              icon: devicon/pytorch
+            - name: TensorFlow
+              icon: devicon/tensorflow
+            - name: OpenCV
+              icon: devicon/opencv
+            - name: Jupyter
+              icon: devicon/jupyter
+        - name: Data & Scientific
+          items:
             - name: Python
               icon: devicon/python
-            - name: Go
-              icon: devicon/go
-        - name: Frontend
+            - name: NumPy
+              icon: devicon/numpy
+            - name: Pandas
+              icon: devicon/pandas
+            - name: CUDA
+              icon: devicon/cuda
+        - name: Geospatial
           items:
-            - name: React
-              icon: devicon/react
-            - name: Next.js
-              icon: devicon/nextjs
-            - name: Tailwind CSS
-              icon: devicon/tailwindcss
-            - name: Alpine.js
-              icon: devicon/alpinejs
-        - name: Backend
+            - name: GDAL
+              icon: devicon/gdal
+            - name: QGIS
+              icon: custom/qgis
+            - name: Rasterio
+              icon: custom/rasterio
+            - name: GeoPandas
+              icon: custom/geopandas
+        - name: Engineering
           items:
-            - name: Node.js
-              icon: devicon/nodejs
-            - name: Express
-              icon: devicon/express
-            - name: PostgreSQL
-              icon: devicon/postgresql
-            - name: Redis
-              icon: devicon/redis
-        - name: DevOps
-          items:
+            - name: Git
+              icon: devicon/git
             - name: Docker
               icon: devicon/docker
-            - name: AWS
-              icon: devicon/amazonwebservices-wordmark
             - name: GitHub Actions
               icon: brands/github
-            - name: Vercel
-              icon: devicon/vercel
+            - name: Linux
+              icon: devicon/linux
     design:
       style: grid
       show_levels: false
@@ -137,92 +221,17 @@ sections:
           dark: "#08080c"
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
-  
-  # Experience Timeline
-  - block: resume-experience
-    id: experience
-    content:
-      title: Experience
-      date_format: Jan 2006
-      items:
-        - title: Senior Software Engineer
-          company: Tech Corp
-          company_url: ''
-          company_logo: ''
-          location: San Francisco, CA
-          date_start: '2023-01-01'
-          date_end: ''
-          description: |2-
-            * Lead development of microservices architecture serving 1M+ users
-            * Improved API response time by 40% through optimization
-            * Mentored team of 5 junior developers
-            * Tech stack: React, Node.js, PostgreSQL, AWS
-        - title: Full-Stack Developer
-          company: Startup Inc
-          company_url: ''
-          company_logo: ''
-          location: Remote
-          date_start: '2021-06-01'
-          date_end: '2022-12-31'
-          description: |2-
-            * Built and deployed 3 production applications from scratch
-            * Implemented CI/CD pipeline reducing deployment time by 60%
-            * Collaborated with design team on UI/UX improvements
-            * Tech stack: Next.js, Express, MongoDB, Docker
-        - title: Junior Developer
-          company: Web Agency
-          company_url: ''
-          company_logo: ''
-          location: New York, NY
-          date_start: '2020-01-01'
-          date_end: '2021-05-31'
-          description: |2-
-            * Developed client websites using modern web technologies
-            * Maintained and updated legacy codebases
-            * Participated in code reviews and agile ceremonies
-            * Tech stack: React, WordPress, PHP, MySQL
-    design:
-      columns: '1'
-      background:
-        color:
-          light: "#ffffff"
-          dark: "#0d0d12"
-      spacing:
-        padding: ["4rem", "0", "4rem", "0"]
-  
-  # Recent Blog Posts
-  - block: collection
-    id: blog
-    content:
-      title: Recent Posts
-      subtitle: 'Thoughts on web development, tech, and more'
-      text: ''
-      filters:
-        folders:
-          - blog
-        exclude_featured: false
-      count: 3
-      order: desc
-    design:
-      view: card
-      columns: 3
-      background:
-        color:
-          light: "#f5f5f5"
-          dark: "#08080c"
-      spacing:
-        padding: ["4rem", "0", "4rem", "0"]
-  
+
   # Contact Section
   - block: contact-info
     id: contact
     content:
       title: Get In Touch
-      subtitle: "Let's build something amazing together"
+      subtitle: "Open to research collaborations and engineering opportunities"
       text: |-
-        I'm always interested in hearing about new projects and opportunities.
-        Whether you're looking to hire, collaborate, or just want to say hi, feel free to reach out!
-      email: alex@example.com
+        I'm always interested in hearing about new research projects, engineering challenges, and opportunities.
+        Whether you want to collaborate, discuss ideas, or just say hi — feel free to reach out!
+      email: thomas.olive@aol.com
       autolink: true
     design:
       columns: '1'
@@ -230,30 +239,6 @@ sections:
         color:
           light: "#ffffff"
           dark: "#0d0d12"
-      spacing:
-        padding: ["4rem", "0", "4rem", "0"]
-  
-  # CTA Card
-  - block: cta-card
-    content:
-      title: "Open to Opportunities"
-      text: |-
-        I'm currently looking for **senior engineering** or **tech lead** roles.
-        
-        Let's connect and discuss how I can help your team.
-      button:
-        text: 'Download Resume'
-        url: uploads/resume.pdf
-        new_tab: true
-    design:
-      card:
-        # Light mode: soft pastel theme gradient | Dark mode: rich deep gradient
-        css_class: 'bg-gradient-to-br from-primary-200 via-primary-100 to-secondary-200 dark:from-primary-600 dark:via-primary-700 dark:to-secondary-700'
-        text_color: dark
-      background:
-        color:
-          light: "#f5f5f5"
-          dark: "#08080c"
       spacing:
         padding: ["4rem", "0", "6rem", "0"]
 ---

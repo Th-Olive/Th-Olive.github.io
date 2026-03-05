@@ -8,6 +8,10 @@
 
 # Generated site output
 public/
+CV/
+.claude/
+CLAUDE.md
+hugo_extended_0.157.0_windows-amd64/
 
 # Hugo resources (processed assets)
 resources/

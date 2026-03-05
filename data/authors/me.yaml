@@ -7,15 +7,15 @@ name:
   family: "OLIVE"
 postnominals: []
 status:
-  icon: "💻"
-role: "AI Research Engineer | Image Processing"
+  icon: "🛰️"
+role: "R&D AI Engineer | Geospatial Deep Learning & Image Processing"
 email: "thomas.olive@aol.com"
-bio: "End-to-end ownership of research projects: from problem framing to deployment
-  Strong mathematical mindset
-  Motivated by experimentation, high-research standards, and meaningful contribution\n"
+bio: "R&D AI Engineer specialising in geospatial deep learning and image processing.
+  End-to-end ownership of research projects: from problem framing to production deployment.
+  Motivated by rigorous experimentation, high research standards, and meaningful contribution.\n"
 affiliations:
-  - name: "Tech Corp"
-    url: "https://techcorp.example.com"
+  - name: "Diginove"
+    url: ""
 links:
   - icon: "at-symbol"
     url: "mailto:thomas.olive@aol.com"
@@ -24,69 +24,89 @@ links:
     url: "https://github.com/Th-Olive"
   - icon: "brands/linkedin"
     url: "https://www.linkedin.com/in/thomas-olive/"
+  - icon: "custom/huggingface"
+    url: "https://huggingface.co/Th-Olive"
+    label: "Hugging Face"
 interests:
-  - "Research"
-  - "AI"
-  - "Computer Vision"
-  - "Robotics"
+  - "Geospatial AI & Earth Observation"
+  - "Computer Vision & Image Processing"
+  - "Deep Learning (CNNs, GANs, ViTs)"
+  - "Climate & Environmental Remote Sensing"
+  - "Robotics & Embedded Systems"
 education:
-  - degree: "M.Eng. Electrical Engineering"
-    institution: "Ecole de Technologie Supérieure"
-    start: "2015-09-01"
-    end: "2019-05-31"
-    summary: "Focus on software engineering and distributed systems.
-
-      Senior project on distributed caching systems.\n"
-    button:
-      text: "View Project"
-      url: "https://github.com/alexjohnson/senior-project"
-      icon: "brands/github"
+  - degree: "M.Sc. Electrical Engineering (Research Profile)"
+    institution: "École de Technologie Supérieure (ETS Montreal)"
+    start: "2022-09-01"
+    end: "2024-08-31"
+    summary: "Specialisation in image processing, computer vision, and applied deep learning.
+      Research: multispectral document analysis using attention-based NMF.\n"
+  - degree: "Engineering Degree — Robotics & Computer Science"
+    institution: "ECAM Lyon"
+    start: "2018-09-01"
+    end: "2022-06-30"
+    summary: "Generalist engineering curriculum with specialisation in robotics and IT.
+      International exchange semester at ETS Montreal.\n"
 experience:
-  - role: "Senior Software Engineer"
-    org: "Tech Corp"
-    start: "2023-01-01"
-    summary: "Lead development of microservices architecture serving 1M+ users.
-
-      Improved API response time by 40% through optimization.
-
-      Mentored team of 5 junior developers.\n"
-  - role: "Full-Stack Developer"
-    org: "Startup Inc"
-    start: "2021-06-01"
-    end: "2022-12-31"
-    summary: "Built and deployed 3 production applications from scratch.
-
-      Implemented CI/CD pipeline reducing deployment time by 60%.
-
-      Led migration from monolith to microservices architecture.\n"
-  - role: "Junior Developer"
-    org: "Web Agency"
-    start: "2020-01-01"
-    end: "2021-05-31"
-    summary: "Developed client websites using React and modern web technologies.
-
-      Participated in code reviews and agile ceremonies.\n"
+  - role: "R&D AI Engineer"
+    org: "Diginove"
+    start: "2024-09-01"
+    summary: "Design and deployment of deep learning models for satellite image processing.
+      Conditional GAN (SENWISE/ESA) for thermal super-resolution: Sentinel-3 × Landsat (1000 m → 30 m, SSIM ≈ 98.8%).
+      Full ownership from architecture to production inference pipeline.\n"
+  - role: "Research Intern — Computer Vision & NLP"
+    org: "Synchromedia Lab, ETS Montreal"
+    start: "2024-01-01"
+    end: "2024-08-31"
+    summary: "Attention–NMF model: CNN attention encoder + NMF decoder for handwritten text extraction
+      from ancient multispectral document images. Submitted to ICASSP 2025.\n"
+  - role: "Automation Intern"
+    org: "Bioderma / Naos Group"
+    start: "2021-05-01"
+    end: "2021-08-31"
+    summary: "Automated quality-control reporting pipeline for production lines.
+      Reduced manual reporting time through scripted data aggregation.\n"
 skills:
-  - name: "Development"
+  - name: "AI / ML"
     items:
-      - label: "TypeScript"
+      - label: "PyTorch"
         level: 5
-      - label: "React"
+      - label: "CNNs / GANs / ViTs"
         level: 5
-      - label: "Node.js"
-        level: 5
-      - label: "Python"
+      - label: "Foundation Models"
         level: 4
-  - name: "DevOps"
+      - label: "TensorFlow"
+        level: 3
+  - name: "Data & Scientific"
+    items:
+      - label: "Python"
+        level: 5
+      - label: "NumPy / SciPy / Pandas"
+        level: 5
+      - label: "CUDA / GPU Programming"
+        level: 4
+      - label: "ONNX"
+        level: 3
+  - name: "Geospatial"
+    items:
+      - label: "GDAL / Rasterio"
+        level: 5
+      - label: "GeoPandas"
+        level: 4
+      - label: "QGIS"
+        level: 4
+  - name: "Engineering"
     items:
       - label: "Docker"
         level: 4
-      - label: "AWS"
+      - label: "Git / CI/CD"
         level: 4
-      - label: "CI/CD"
-        level: 5
+      - label: "Linux"
+        level: 4
 languages:
-  - name: "English"
+  - name: "French"
     level: 5
     label: "Native"
+  - name: "English"
+    level: 5
+    label: "C2"
 awards: []
