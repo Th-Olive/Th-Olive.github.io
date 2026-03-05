@@ -51,44 +51,7 @@ sections:
   - block: resume-experience
     id: experience
     content:
-      title: Experience
-      date_format: Jan 2006
-      items:
-        - title: R&D AI Engineer
-          company: Diginove
-          company_url: ''
-          company_logo: ''
-          location: Montpellier, France
-          date_start: '2024-09-01'
-          date_end: ''
-          description: |2-
-            * Design and deployment of deep learning models for satellite image processing
-            * Conditional GAN (SENWISE project) for thermal super-resolution: Sentinel-3 × Landsat (1000 m → 30 m, SSIM ≈ 98.8%)
-            * ESA-funded research; full ownership from architecture to production inference pipeline
-            * Tech stack: PyTorch, GDAL, Rasterio, Python, Docker
-        - title: Research Intern — Computer Vision & NLP
-          company: Synchromedia Lab, ETS Montreal
-          company_url: ''
-          company_logo: ''
-          location: Montreal, Canada
-          date_start: '2024-01-01'
-          date_end: '2024-08-31'
-          description: |2-
-            * Designed Attention–NMF model: CNN attention encoder + NMF decoder with linear independence constraint
-            * Task: handwritten text extraction from ancient multispectral document images
-            * Work submitted to ICASSP 2025
-            * Tech stack: PyTorch, NumPy, Python
-        - title: Automation Intern
-          company: Bioderma / Naos Group
-          company_url: ''
-          company_logo: ''
-          location: Lyon, France
-          date_start: '2021-05-01'
-          date_end: '2021-08-31'
-          description: |2-
-            * Automated quality-control reporting pipeline for production lines
-            * Reduced manual reporting time significantly through scripted data aggregation
-            * Tech stack: Python, Excel automation, PLC data interfaces
+      username: me
     design:
       columns: '1'
       background:
@@ -98,41 +61,17 @@ sections:
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
 
-  # Education Timeline
+  # Education Timeline 
   - block: resume-experience
     id: education
     content:
-      title: Education
-      date_format: Jan 2006
-      items:
-        - title: M.Sc. Electrical Engineering (Research Profile)
-          company: École de Technologie Supérieure (ETS Montreal)
-          company_url: ''
-          company_logo: ''
-          location: Montreal, Canada
-          date_start: '2022-09-01'
-          date_end: '2024-08-31'
-          description: |2-
-            * Specialisation in image processing, computer vision, and applied deep learning
-            * Research thesis: multispectral document analysis using attention-based NMF
-            * Coursework: Signal Processing, Machine Learning, Computer Vision, Optimization
-        - title: Engineering Degree — Robotics & Computer Science
-          company: ECAM Lyon
-          company_url: ''
-          company_logo: ''
-          location: Lyon, France
-          date_start: '2018-09-01'
-          date_end: '2022-06-30'
-          description: |2-
-            * Generalist engineering curriculum with specialisation in robotics and IT
-            * Final year focus: embedded systems, automation, signal processing
-            * International exchange: ETS Montreal (2022–2024)
+      username: me
     design:
       columns: '1'
       background:
         color:
-          light: "#f5f5f5"
-          dark: "#08080c"
+          light: "#ffffff"
+          dark: "rgb(39, 39, 119)"
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
 

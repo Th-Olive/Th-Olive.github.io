@@ -5,7 +5,7 @@
 main:
   - name: Experience
     url: /#experience
-    weight: 10
+    weight: 10    
   - name: Education
     url: /#education
     weight: 20
