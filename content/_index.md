@@ -37,7 +37,7 @@ sections:
           url: "#skills"
           icon: arrow-down
     design:
-      style: split
+      style: centered
       avatar_shape: circle
       animations: true
       background:
