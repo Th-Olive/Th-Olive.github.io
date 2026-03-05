@@ -33,19 +33,6 @@ interests:
   - "Deep Learning (CNNs, GANs, ViTs)"
   - "Climate & Environmental Remote Sensing"
   - "Robotics & Embedded Systems"
-education:
-  - degree: "M.Sc. Electrical Engineering (Research Profile)"
-    institution: "École de Technologie Supérieure (ETS Montreal)"
-    start: "2022-09-01"
-    end: "2024-08-31"
-    summary: "Specialisation in image processing, computer vision, and applied deep learning.
-      Research: multispectral document analysis using attention-based NMF.\n"
-  - degree: "Engineering Degree — Robotics & Computer Science"
-    institution: "ECAM Lyon"
-    start: "2018-09-01"
-    end: "2022-06-30"
-    summary: "Generalist engineering curriculum with specialisation in robotics and IT.
-      International exchange semester at ETS Montreal.\n"
 experience:
   - role: "R&D AI Engineer"
     org: "Diginove"

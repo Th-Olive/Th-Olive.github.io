@@ -61,17 +61,17 @@ sections:
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
 
-  # Education Timeline 
+  # Education Timeline
   - block: resume-experience
     id: education
     content:
-      username: me
+      username: me-edu
     design:
       columns: '1'
       background:
         color:
           light: "#ffffff"
-          dark: "rgb(39, 39, 119)"
+          dark: "#0d0d12"
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
 
