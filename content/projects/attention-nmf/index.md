@@ -12,7 +12,7 @@ tech_stack:
   - NumPy
   - Python
 featured: true
-status: "Published (ICASSP 2025)"
+status: "Submitted (ICASSP 2025)"
 role: "Research Intern"
 duration: "Jan 2024 – Aug 2024"
 highlights:
@@ -48,6 +48,8 @@ The model is trained end-to-end with a reconstruction objective plus the indepen
 
 ## Publication
 
-Work submitted to and accepted at **ICASSP 2025** (IEEE International Conference on Acoustics, Speech and Signal Processing).
+Work submitted to **ICASSP 2025** (IEEE International Conference on Acoustics, Speech and Signal Processing).
+
+![msi](msi.png)
 
 > Code available. Research paper in publication — public repository link to be added post-publication.

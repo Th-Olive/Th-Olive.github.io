@@ -27,7 +27,6 @@ sections:
           - "end-to-end ML pipelines"
           - "research-grade AI systems"
           - "document AI pipelines"
-          - "vision-language models"
         type_speed: 70
         delete_speed: 40
         pause_time: 2500
@@ -35,8 +34,8 @@ sections:
         - text: Get In Touch
           url: "#contact"
           icon: envelope
-        - text: Skills
-          url: "#skills"
+        - text: Projects
+          url: "#projects"
           icon: arrow-down
     design:
       style: centered
@@ -123,14 +122,12 @@ sections:
               icon: devicon/pytorch
             - name: TensorFlow
               icon: devicon/tensorflow
-            - name: OpenCV
-              icon: devicon/opencv
-            - name: Jupyter
-              icon: devicon/jupyter
-            - name: Keras
-              icon: devicon/keras
+            - name: ONNX
+              icon: custom/onnx
             - name: Scikit-learn
               icon: devicon/scikitlearn
+            - name: CUDA
+              icon: custom/cuda
         - name: Data & Scientific
           items:
             - name: Python
@@ -139,32 +136,38 @@ sections:
               icon: devicon/numpy
             - name: Pandas
               icon: devicon/pandas
-            - name: CUDA
-              icon: devicon/cuda
-            - name: C++
-              icon: devicon/cplusplus
             - name: Matlab
               icon: devicon/matlab
-        - name: Geospatial
-          items:
-            - name: GDAL
-              icon: devicon/gdal
-            - name: QGIS
-              icon: custom/qgis
-            - name: Rasterio
-              icon: custom/rasterio
-            - name: GeoPandas
-              icon: custom/geopandas
         - name: Engineering
           items:
             - name: Git
               icon: devicon/git
             - name: Docker
               icon: devicon/docker
-            - name: GitHub Actions
+            - name: GitHub
               icon: brands/github
             - name: Linux
-              icon: devicon/linux
+              icon: devicon/linux              
+        - name: Geospatial
+          items:
+            - name: QGIS
+              icon: custom/qgis
+            - name: Rasterio
+              icon: custom/rasterio
+            - name: GDAL
+              icon: custom/gdal
+            - name: GeoPandas
+              icon: custom/geopandas
+        - name: Robotics
+          items:
+            - name: C++
+              icon: devicon/cplusplus
+            - name: ROS
+              icon: devicon/ros
+            - name: OpenCV
+              icon: devicon/opencv
+            - name: Raspberry Pi
+              icon: devicon/raspberrypi
     design:
       style: grid
       show_levels: false

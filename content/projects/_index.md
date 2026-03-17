@@ -3,6 +3,13 @@ title: 'Projects'
 date: 2024-05-19
 type: landing
 
+cascade:
+  hide_date: true
+  reading_time: false
+  toc: false
+  profile: false
+  show_date_updated: false
+
 design:
   # Section spacing
   spacing: '5rem'
