@@ -1,7 +1,7 @@
 ---
 title: "Attention–NMF: Multispectral Document Analysis"
 date: 2024-01-01
-summary: "CNN attention encoder combined with an NMF decoder under a linear independence constraint for handwritten text extraction from ancient multispectral document images. Submitted to ICASSP 2025."
+summary: "Hybrid AE+NMF architecture combining a CNN attention encoder with an NMF decoder under orthogonality constraints for blind spectral unmixing of ancient multispectral document images. Outperformed SOTA baselines with reduced model parameters. Accepted at ICASSP 2025."
 tags:
   - Research
   - Computer Vision
@@ -21,6 +21,8 @@ highlights:
   - "Task: handwritten text extraction from ancient multispectral document images"
   - "Submitted and accepted to ICASSP 2025"
   - "Research conducted at Synchromedia Lab, ETS Montreal"
+  - "Outperformed state-of-the-art baselines on handwritten text extraction benchmarks"
+  - "Reduced model parameters while maintaining performance gains"
 ---
 
 ## Overview
@@ -39,10 +41,13 @@ The model is trained end-to-end with a reconstruction objective plus the indepen
 
 ## Results
 
-Attention–NMF outperforms standard NMF baselines and CNN-only approaches on handwritten text extraction benchmarks using multispectral document datasets from the Synchromedia Lab.
+- Outperformed state-of-the-art NMF baselines and CNN-only approaches on handwritten text extraction benchmarks
+- Reduced model parameters compared to baseline architectures while improving source separation quality
+- Improved handling of nonlinear spectral mixing in degraded multispectral documents
+- Enhanced interpretability through explicit NMF basis decomposition
 
 ## Publication
 
 Work submitted to and accepted at **ICASSP 2025** (IEEE International Conference on Acoustics, Speech and Signal Processing).
 
-> Research paper in publication — no public repository available at this time.
+> Code available. Research paper in publication — public repository link to be added post-publication.

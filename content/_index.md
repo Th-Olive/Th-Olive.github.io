@@ -26,6 +26,8 @@ sections:
           - "satellite image analysis"
           - "end-to-end ML pipelines"
           - "research-grade AI systems"
+          - "document AI pipelines"
+          - "vision-language models"
         type_speed: 70
         delete_speed: 40
         pause_time: 2500
@@ -94,6 +96,10 @@ sections:
           tag: Geospatial
         - name: NLP
           tag: NLP
+        - name: Engineering
+          tag: Engineering
+        - name: Exploration
+          tag: Exploration
       default_button_index: 0
     design:
       columns: 3
@@ -121,6 +127,10 @@ sections:
               icon: devicon/opencv
             - name: Jupyter
               icon: devicon/jupyter
+            - name: Keras
+              icon: devicon/keras
+            - name: Scikit-learn
+              icon: devicon/scikitlearn
         - name: Data & Scientific
           items:
             - name: Python
@@ -131,6 +141,10 @@ sections:
               icon: devicon/pandas
             - name: CUDA
               icon: devicon/cuda
+            - name: C++
+              icon: devicon/cplusplus
+            - name: Matlab
+              icon: devicon/matlab
         - name: Geospatial
           items:
             - name: GDAL

@@ -23,6 +23,9 @@ highlights:
   - "Conditional GAN architecture fusing Sentinel-3 SLSTR and Landsat-8/9 OLI-TIRS"
   - "End-to-end pipeline: data ingestion (GDAL/Rasterio) → training → production inference"
   - "ESA-funded research within the SENWISE programme"
+  - "Sole contributor / project lead on Diginove's side"
+  - "End-users: firefighters using thermal maps for fire monitoring"
+  - "Poster presented at AI4EO 2025; paper in progress"
 ---
 
 ## Overview
@@ -47,5 +50,12 @@ The generator uses a U-Net-style encoder-decoder with skip connections, while th
 ## Deployment
 
 The inference pipeline runs on internal infrastructure. Data ingestion and pre-processing leverage GDAL and Rasterio for geospatial raster handling. The model is containerised with Docker for reproducible production deployment.
+
+## Dissemination & Role
+
+- Poster presented at **AI4EO 2025** (International Workshop on AI for Earth Observation)
+- Paper currently in progress
+- Led the project independently — sole contributor and internal point of contact on Diginove's side
+- End-users include operational **firefighters** applying thermal maps for environmental fire monitoring
 
 > This is a proprietary project — no public repository or live demo available.

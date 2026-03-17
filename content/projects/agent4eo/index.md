@@ -1,16 +1,17 @@
 ---
 title: "Agent4EO: LLM-based Geospatial Agentic Workflow"
 date: 2025-01-01
-summary: "An LLM agent that integrates satellite image processing tools into an automated geospatial workflow. Enables natural-language-driven Earth Observation analysis via tool orchestration. Demo available on Hugging Face."
+summary: "LLM routing agent (Ministral-3B via LangChain) that orchestrates geospatial EO tools to compute NDVI, LST, and dNBR metrics with OpenStreetMap context, then runs a second-pass LLM to generate operational narratives. Live demo on Hugging Face."
 tags:
   - Research
   - Geospatial
   - NLP
 tech_stack:
   - Python
-  - LLMs
-  - EO APIs
-  - Tool Orchestration
+  - Ministral-3B
+  - LangChain
+  - Rasterio
+  - Gradio
 featured: true
 status: "Demo Available"
 role: "Independent Exploration"
@@ -19,10 +20,11 @@ links:
     name: "Hugging Face Demo"
     url: "https://huggingface.co/Th-Olive"
 highlights:
-  - "LLM agent with access to geospatial and EO processing tools"
-  - "Natural-language interface for satellite image analysis tasks"
-  - "Agentic tool orchestration: query → plan → execute → interpret"
-  - "Exploration of LLM capabilities in Earth Observation workflows"
+  - "LLM routing agent powered by Ministral-3B via LangChain"
+  - "Computes NDVI, LST, and dNBR geospatial metrics from satellite imagery"
+  - "Integrates OpenStreetMap context for spatially-aware analysis"
+  - "Second-pass LLM generates operational narratives for non-expert users"
+  - "Agentic loop: natural-language query → tool selection → execution → interpretation"
   - "Live demo hosted on Hugging Face Spaces"
 ---
 
@@ -32,13 +34,13 @@ Agent4EO is an independent exploration project investigating how large language 
 
 ## Approach
 
-The agent is built around a **tool-use LLM** architecture:
+The agent is built around a **tool-use LLM** architecture powered by **Ministral-3B** via **LangChain**:
 
-1. **Tool library** — a set of Python functions wrapping EO APIs (satellite data access, image processing, change detection, visualisation)
-2. **LLM orchestrator** — reasons over the task, selects tools, interprets results, and decides next steps
-3. **Agentic loop** — continues until the task is resolved or a stopping condition is met
-
-This architecture mirrors patterns from the agent/function-calling literature applied to the domain of Earth Observation.
+1. **Tool library** — Python functions computing key EO metrics: NDVI (vegetation health), LST (land surface temperature), dNBR (burn severity)
+2. **OpenStreetMap integration** — enriches spatial context with road networks, land use, and administrative boundaries
+3. **LLM routing orchestrator** — reasons over the task, selects and calls tools, interprets intermediate results
+4. **Second-pass narrative LLM** — converts raw metrics and visualisations into human-readable operational summaries for non-expert end-users
+5. **Gradio interface** — web UI for interactive querying and result display
 
 ## Motivation
 
