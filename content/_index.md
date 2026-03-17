@@ -182,11 +182,7 @@ sections:
   - block: contact-info
     id: contact
     content:
-      title: Get In Touch
-      subtitle: "Open to research collaborations and engineering opportunities"
-      text: |-
-        I'm always interested in hearing about new research projects, engineering challenges, and opportunities.
-        Whether you want to collaborate, discuss ideas, or just say hi — feel free to reach out!
+      title: Contact
       email: thomas.olive@aol.com
       autolink: true
     design:
