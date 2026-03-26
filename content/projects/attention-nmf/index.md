@@ -1,7 +1,7 @@
 ---
 title: "Attention–NMF: Multispectral Document Analysis"
 date: 2024-01-01
-summary: "Hybrid AE+NMF architecture combining a CNN attention encoder with an NMF decoder under orthogonality constraints for blind spectral unmixing of ancient multispectral document images. Outperformed SOTA baselines with reduced model parameters. Accepted at ICASSP 2025."
+summary: "Hybrid AE+NMF architecture combining a CNN attention encoder with an NMF decoder under orthogonality constraints for blind spectral unmixing of ancient multispectral document images. Outperformed SOTA baselines with reduced model parameters. Submitted to ICASSP 2025."
 tags:
   - Research
   - Computer Vision
@@ -12,6 +12,7 @@ tech_stack:
   - NumPy
   - Python
 featured: true
+external_link: "https://github.com/arahiche/Attention-based-AE-ONMF"
 status: "Submitted (ICASSP 2025)"
 role: "Research Intern"
 duration: "Jan 2024 – Aug 2024"
@@ -19,10 +20,11 @@ highlights:
   - "Novel Attention–NMF architecture combining learnable attention with non-negative matrix factorisation"
   - "Linear independence constraint on NMF basis vectors for improved source separation"
   - "Task: handwritten text extraction from ancient multispectral document images"
-  - "Submitted and accepted to ICASSP 2025"
+  - "Submitted to ICASSP 2025"
   - "Research conducted at Synchromedia Lab, ETS Montreal"
-  - "Outperformed state-of-the-art baselines on handwritten text extraction benchmarks"
-  - "Reduced model parameters while maintaining performance gains"
+  - "FM 84.29%, PSNR 21.33 on MSTEx-2 — best across all metrics vs NMF and deep learning baselines"
+  - "12,356 total parameters (48.27 KB) — 50% model size reduction vs standard AE-NMF decoders"
+  - "Benchmarked on 3 public datasets: MSTEx-1, MSTEx-2, MSBin"
 ---
 
 ## Overview

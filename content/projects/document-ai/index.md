@@ -20,7 +20,7 @@ highlights:
   - "OCR integration for text extraction from scanned documents"
   - "Handwritten digit and character recognition models trained on target-domain data"
   - "Named Entity Recognition (BERT-based NER) for structured field extraction"
-  - "CPU-constrained deployment via ONNX and TensorRT runtime"
+  - "CPU-only inference via ONNX and TensorRT — no GPU dependency in production"
   - "Integration into a legacy C++ document management system"
   - "Health records extraction feature deployed in production"
 ---
@@ -41,15 +41,15 @@ I designed and integrated three AI components:
 2. **Handwritten recognition** — models for digit and character recognition on form fields, trained on curated datasets representative of the target documents
 3. **Named Entity Recognition** — BERT-based NER model fine-tuned to extract structured fields (names, dates, identifiers) from extracted text
 
-### Deployment constraints
+### Production deployment
 
-- **CPU-only**: No GPU in production; models exported to ONNX and optimised via TensorRT for CPU inference
-- **Legacy integration**: Inference called from C++ via the ONNX Runtime C++ API; Python training pipeline kept separate from the production runtime
+- **CPU-only inference**: all models exported to ONNX and optimised via TensorRT — no GPU dependency in production, a hard constraint met through careful model selection and export pipeline design
+- **Legacy integration**: inference called from C++ via the ONNX Runtime C++ API; Python training pipeline kept fully decoupled from the production runtime
 
 ## Results
 
+- Structured field extraction (names, dates, identifiers) from health record forms — previously manual, now automated end-to-end
 - AI features deployed and actively used by end customers in production
-- Primary use case: extraction of structured information from health record forms
-- Reduced manual data entry for end users
+- CPU-only deployment: no GPU dependency in the production environment, achieved via ONNX optimisation
 
 > Proprietary project — no public repository available.

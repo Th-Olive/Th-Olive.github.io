@@ -13,12 +13,13 @@ tech_stack:
   - Rasterio
   - Gradio
 featured: true
+external_link: "https://huggingface.co/spaces/Th-Olive/Agent4EO"
 status: "Demo Available"
-role: "Independent Exploration"
-links:
-  - icon: custom/huggingface
-    name: "Hugging Face Demo"
-    url: "https://huggingface.co/Th-Olive"
+role: "Independent Project"
+# links:
+#   - icon: custom/huggingface
+#     name: "Hugging Face Demo"
+#     url: "https://huggingface.co/Th-Olive"
 highlights:
   - "LLM routing agent powered by Ministral-3B via LangChain"
   - "Computes NDVI, LST, and dNBR geospatial metrics from satellite imagery"

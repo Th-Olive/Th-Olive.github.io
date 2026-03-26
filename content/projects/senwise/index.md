@@ -30,7 +30,15 @@ highlights:
 
 ## Overview
 
-SENWISE is an ESA-funded project at Diginove aimed at enhancing the spatial resolution of thermal satellite imagery for environmental monitoring applications. The core challenge: Sentinel-3 provides thermal data at 1000 m resolution while Landsat captures optical imagery at 30 m — a ×33 resolution gap that limits fine-grained land surface temperature analysis.
+SENWISE is an ESA-funded project at Diginove aimed at enhancing the spatial resolution of thermal satellite imagery for environmental monitoring applications. The core challenge: Sentinel-3 provides thermal data at 1000 m resolution while Landsat captures optical imagery at 30 m — a ×33 resolution gap that limits fine-grained land surface temperature analysis. The output is a **daily high-resolution thermal time series** — directly simulating future LSTM mission capabilities for operational land surface temperature (LST) monitoring.
+
+## Challenges
+
+The properties that make this problem technically non-trivial:
+- **Spatial resolution mismatch (×33)**: the model must learn to generate fine spatial structure, not merely interpolate — requiring it to generalise across diverse land cover and seasonal conditions
+- **Sensor heterogeneity**: Sentinel-3 SLSTR (thermal) and Landsat OLI-TIRS (optical) have different spectral responses, viewing geometries, and noise profiles, requiring cross-instrument alignment
+- **Temporal misalignment**: acquisitions are not simultaneous; surface and atmospheric conditions change between passes, introducing domain shift the model must handle implicitly
+- **Scale**: TB-scale EO archive processed via GDAL/Rasterio pipelines handling multi-resolution raster mosaicking, reprojection, and temporal compositing
 
 ## Approach
 

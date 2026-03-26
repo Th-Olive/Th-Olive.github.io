@@ -1,39 +1,39 @@
 ---
-title: "Medical VLM Exploration: Vision-Language Models for Healthcare"
+title: "Medical VLM: Self-directed Study on Vision-Language Models for Healthcare"
 date: 2025-06-01
-summary: "Personal exploration of vision-language models applied to medical imaging. Reproduced CT-CLIP (chest CT contrastive VLM) and studied self-supervised learning, inference constraints, and deployment implications for clinical AI."
+summary: "Self-directed study of vision-language models for medical imaging. Reproduced CT-CLIP (contrastive VLM for chest CT), surveyed the field from BioViL to MedCLIP, and analysed the gap between research benchmarks and clinical deployment constraints."
 tags:
   - Research
-  - Exploration
 tech_stack:
   - PyTorch
   - Vision-Language Models
   - Self-supervised Learning
-featured: false
-status: "Personal Exploration"
+featured: true
+status: "Personal Study"
 role: "Independent"
 duration: "2025"
 highlights:
-  - "Reproduction of CT-CLIP: contrastive vision-language model for chest CT images"
-  - "Study of contrastive and self-supervised learning for volumetric medical data"
-  - "Analysis of inference constraints and deployment implications in clinical AI"
-  - "Exploration of interpretability and bias considerations in medical VLMs"
+  - "Surveyed medical imaging VLMs: BioViL, MedCLIP, CT-CLIP, and related contrastive learning approaches"
+  - "Reproduced CT-CLIP: contrastive vision-language pre-training on chest CT — studied architecture, 3D data handling, and training dynamics"
+  - "Analysed the gap between research benchmarks and clinical deployment: privacy, interpretability, regulatory constraints, inference cost"
+  - "Active self-directed learning — motivated by interest in AI for healthcare and regulated environments"
 ---
 
-## Overview
+## Context
 
-A personal exploration investigating how vision-language models (VLMs) can be applied to medical imaging — specifically chest CT. Motivated by growing interest in foundation models for scientific and clinical data, and by the desire to understand the gap between research results and real-world clinical deployment.
+A self-directed study investigating how vision-language models (VLMs) can be applied to medical imaging — specifically chest CT. Motivated by genuine interest in the intersection of AI and clinical practice, and by the question of what it actually takes to deploy a foundation model in a regulated, safety-critical environment.
+
+This is not a production project and no clinical system was built. The goal was to build concrete understanding of the field: the architectures, the training approaches, the benchmarks, and the constraints that separate research results from clinical reality.
 
 ## Approach
 
-1. **Literature review** — surveyed recent VLMs adapted for medical imaging (BioViL, MedCLIP, CT-CLIP, and related work)
-2. **CT-CLIP reproduction** — implemented and ran the CT-CLIP contrastive learning framework on chest CT data to understand architecture decisions and training dynamics
-3. **Constraints analysis** — explored the practical gap between research performance and clinical deployment: data privacy, interpretability, regulatory considerations, and inference cost
+1. **Literature review** — surveyed recent VLMs adapted for medical imaging: BioViL, MedCLIP, CT-CLIP, and related work on contrastive and self-supervised learning for clinical data
+2. **CT-CLIP reproduction** — implemented and ran the CT-CLIP contrastive learning framework on chest CT data to understand architecture decisions, 3D volumetric data handling, and training dynamics at first hand
+3. **Deployment analysis** — studied the practical gap between benchmark performance and clinical deployment: data privacy and de-identification, interpretability requirements, and inference cost under clinical infrastructure
 
-## What I learned
+## Takeaways
 
-- Contrastive and self-supervised learning methods and their adaptation to volumetric (3D) medical data
-- Practical constraints of deploying VLMs in healthcare contexts (interpretability, regulatory, bias)
-- How domain-specific evaluation differs from standard vision benchmarks
+- How contrastive and self-supervised methods adapt to volumetric (3D) medical data — the data handling and augmentation challenges that don't appear in standard vision literature
+- Why domain-specific evaluation in medical AI differs fundamentally from standard benchmarks — and why strong research metrics do not translate directly to clinical validity
 
-> Personal learning project — no production deployment or public repository.
+> Self-directed learning project — no production deployment or public repository.

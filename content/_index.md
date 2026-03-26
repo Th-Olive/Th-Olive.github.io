@@ -22,21 +22,24 @@ sections:
         enable: true
         prefix: "I build"
         strings:
-          - "deep learning models"
-          - "satellite image analysis"
-          - "end-to-end ML pipelines"
-          - "research-grade AI systems"
-          - "document AI pipelines"
+          - "end-to-end AI systems"
+          - "satellite imagery analysis"
+          - "models that ship to production"
+          - "research-driven solutions"
+          - "computer vision pipelines"
         type_speed: 70
         delete_speed: 40
         pause_time: 2500
       cta_buttons:
+        - text: View Projects
+          url: "#projects"
+          icon: arrow-down
+        - text: Download CV
+          url: "/uploads/resume.pdf"
+          icon: document
         - text: Get In Touch
           url: "#contact"
           icon: envelope
-        - text: Projects
-          url: "#projects"
-          icon: arrow-down
     design:
       style: centered
       avatar_shape: circle
@@ -97,8 +100,6 @@ sections:
           tag: NLP
         - name: Engineering
           tag: Engineering
-        - name: Exploration
-          tag: Exploration
       default_button_index: 0
     design:
       columns: 3
@@ -182,7 +183,12 @@ sections:
   - block: contact-info
     id: contact
     content:
-      title: Contact
+      title: Get In Touch
+      text: |
+        I'm open to R&D AI Engineer, Research Engineer, and Applied Scientist roles — in scientific imaging, computer vision, multimodal models, and AI for health, environment, or physical simulation. I work best in environments that value technical depth and real-world impact.
+
+        Whether you have a role, a project, or just want to connect — feel free to reach out.
+
       email: thomas.olive@aol.com
       autolink: true
     design:

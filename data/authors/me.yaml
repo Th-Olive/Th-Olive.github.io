@@ -8,9 +8,9 @@ name:
 postnominals: []
 status:
   icon: "🤖"
-role: "R&D AI Engineer | Geospatial Deep Learning & Image Processing"
+role: "R&D AI Engineer | Computer Vision & Scientific Data"
 email: "thomas.olive@aol.com"
-bio: "AI Research Engineer specializing in computer vision and scientific data, with experience in Earth Observation, document AI, and research-driven model design. I build end-to-end solutions from data understanding to deployment, with a strong focus on rigor and real-world impact.\n"
+bio: "Research engineer applying AI to complex image data — Earth Observation and document analysis — with end-to-end ownership from model design and rigorous evaluation through production deployment. My approach starts with the theory, the data and the problem structure: the model comes after.\n"
 affiliations:
   - name: "Diginove"
     url: ""
@@ -25,38 +25,35 @@ links:
 interests:
   - "Geospatial AI & Earth Observation"
   - "Computer Vision & Image Processing"
-  - "Deep Learning (CNNs, GANs, ViTs)"
-  - "Climate & Environmental Remote Sensing"
-  - "Robotics & Embedded Systems"
-  - "Document Intelligence"
-  - "Medical Imaging (Exploration)"
   - "Scientific AI & Foundation Models"
+  - "Medical Imaging"
+  - "Robotics & Embedded Systems"
 experience:
-  - role: "R&D AI Engineer"
-    org: "Diginove"
+  - role: "R&D AI Engineer - Geospatial and Document AI"
+    org: "Diginove - Aix en Provence, France"
     start: "2024-09-01"
     summary: |
       * Led the ESA-funded SENWISE project internally as sole Diginove contributor and point-of-contact for consortium partners
       * Coordinated deliverables and authored technical proposals for Horizon Europe and CNES funding programs.
-      * Built end-to-end experimentation pipelines on TB-scale multi-modal EO datasets (thermal, optical, SAR, hyperspectral), addressing spatial alignment, multi-resolution fusion, and geometric consistency across heterogeneous satellite sources.
-      * Developed a spatio-temporal conditional GAN fusing Sentinel-3 SLSTR and Landsat 8/9 thermal imagery for daily super-resolution (1000 m → 30 m, ×33), validated at SSIM ≈ 98.8% against high-resolution references.
-      * Fine-tuned task-specific heads of the TESSERA foundation model for above-ground biomass estimation from multi-modal Sentinel-1 (SAR) and Sentinel-2 (optical) data, using a curated LiDAR-derived ground truth.
+      * Built end-to-end experimentation pipelines on TB-scale multi-modal EO datasets (thermal, optical, SAR, hyperspectral), addressing spatial and temporal alignment, multi-resolution fusion, and geometric consistency across heterogeneous satellite sources.
+      * Developed a spatio-temporal conditional GAN fusing Sentinel-3 SLSTR and Landsat 8/9 thermal imagery for daily super-resolution (1000 m → 30 m, ×33), validated on held-out test scenes at SSIM ≈ 98.8% against Landsat high-resolution references.
+      * Fine-tuned task-specific heads of the TESSERA foundation model for above-ground biomass estimation from multi-modal Sentinel-1 (SAR) and Sentinel-2 (optical) data, using a curated LiDAR-derived ground truth as reference for evaluation.
       * Co-supervised PhD research on tree species classification and VOC emission estimation from hyperspectral imagery.
-      * Uncovered pre-fire condition patterns through exploratory data analysis; prototyped anomaly detection and intensity forecasting tools in direct collaboration with operational firefighters.
-      * Integrated OCR, handwritten digit/character recognition, and BERT-based NER into a legacy C++ document management system; deployed via ONNX/TensorRT on CPU — health records extraction feature in production.
+      * Uncovered pre-fire condition patterns through exploratory data analysis; developed anomaly detection and intensity forecasting tools in direct collaboration with operational firefighters.
+      * Integrated OCR, handwritten digit/character recognition, and BERT-based NER into a legacy C++ document management system; deployed via ONNX/TensorRT — CPU-only inference, no GPU dependency in production — health records extraction feature actively used by end customers.
       * Presented a poster at AI4EO 2025 on the spatio-temporal fusion model; paper in progress.
-  - role: "Research Intern — Computer Vision & NLP"
-    org: "Synchromedia Lab, ETS Montreal"
+  - role: "Research Intern — Multispectral Image Processing"
+    org: "Synchromedia Lab - Montreal, Canada"
     start: "2024-01-01"
     end: "2024-08-31"
     summary: |
-      * Addressed a gap in the literature on handwritten text extraction from multispectral images of ancient documents, framed as a blind source separation / spectral unmixing problem.
-      * Designed Attention–NMF: a hybrid CNN attention encoder combined with an NMF decoder, with a linear independence constraint on the latent space to reduce source confusion in highly correlated spectral signals.
+      * Addressed a literature gap on segmentation of multispectral images of ancient documents, framed as a blind source separation / spectral unmixing problem.
+      * Designed Attention–NMF: a hybrid CNN attention encoder combined with an NMF decoder, with a linear independence constraint on the latent space.
       * Built the full experimental pipeline: dataset curation, model training, ablation studies, and systematic benchmarking against state-of-the-art approaches.
-      * Outperformed baselines while reducing model parameter count; improved handling of nonlinear spectral mixing in degraded documents.
-      * Authored a research paper accepted at ICASSP 2025; code available.
-  - role: "Automation Intern"
-    org: "Bioderma / Naos Group"
+      * Best results on MSTEx-2 (FM 84.29%, PSNR 21.33) across all compared methods; 50% model size reduction vs baselines, validated on 3 benchmarks.
+      * Authored a research paper submitted at ICASSP 2025; code available.
+  - role: "Automation Intern - Robotics"
+    org: "Bioderma Naos Group - Aix en Provence, France"
     start: "2021-05-01"
     end: "2021-08-31"
     summary: |
