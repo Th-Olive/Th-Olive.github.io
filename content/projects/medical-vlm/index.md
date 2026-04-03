@@ -9,6 +9,7 @@ tech_stack:
   - Vision-Language Models
   - Self-supervised Learning
 featured: true
+external_link: "https://github.com/Th-Olive/CT-CLIP"
 status: "Personal Study"
 role: "Independent"
 duration: "2025"

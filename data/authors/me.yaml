@@ -47,7 +47,7 @@ experience:
     start: "2024-01-01"
     end: "2024-08-31"
     summary: |
-      * Addressed a literature gap on segmentation of multispectral images of ancient documents, framed as a blind source separation / spectral unmixing problem.
+      * Addressed a literature gap on unsupervised segmentation of multispectral ancient documents — a blind source separation problem requiring no pixel-level annotations, training signal derived entirely from self-supervised spectral reconstruction.
       * Designed Attention–NMF: a hybrid CNN attention encoder combined with an NMF decoder, with a linear independence constraint on the latent space.
       * Built the full experimental pipeline: dataset curation, model training, ablation studies, and systematic benchmarking against state-of-the-art approaches.
       * Best results on MSTEx-2 (FM 84.29%, PSNR 21.33) across all compared methods; 50% model size reduction vs baselines, validated on 3 benchmarks.
