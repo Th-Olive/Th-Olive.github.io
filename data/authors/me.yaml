@@ -10,7 +10,9 @@ status:
   icon: "🤖"
 role: "R&D AI Engineer | Computer Vision & Scientific Data"
 email: "thomas.olive@aol.com"
-bio: "Research engineer applying AI to complex image data — Earth Observation and document analysis — with end-to-end ownership from model design and rigorous evaluation through production deployment. My approach starts with the theory, the data and the problem structure: the model comes after.\n"
+bio: "
+      **R&D** Engineer in **AI** and **Image Processing**, committed to understanding problems in depth to build solutions with **real-world value**.
+      "
 affiliations:
   - name: "Diginove"
     url: ""
@@ -29,37 +31,38 @@ interests:
   - "Medical Imaging"
   - "Robotics & Embedded Systems"
 experience:
-  - role: "R&D AI Engineer - Geospatial and Document AI"
+  - role: "R&D AI Engineer - Satellite and Document Image Processing"
     org: "Diginove - Aix en Provence, France"
     start: "2024-09-01"
     summary: |
-      * Led the ESA-funded SENWISE project internally as sole Diginove contributor and point-of-contact for consortium partners
-      * Coordinated deliverables and authored technical proposals for Horizon Europe and CNES funding programs.
-      * Built end-to-end experimentation pipelines on TB-scale multi-modal EO datasets (thermal, optical, SAR, hyperspectral), addressing spatial and temporal alignment, multi-resolution fusion, and geometric consistency across heterogeneous satellite sources.
-      * Developed a spatio-temporal conditional GAN fusing Sentinel-3 SLSTR and Landsat 8/9 thermal imagery for daily super-resolution (1000 m → 30 m, ×33), validated on held-out test scenes at SSIM ≈ 98.8% against Landsat high-resolution references.
-      * Fine-tuned task-specific heads of the TESSERA foundation model for above-ground biomass estimation from multi-modal Sentinel-1 (SAR) and Sentinel-2 (optical) data, using a curated LiDAR-derived ground truth as reference for evaluation.
-      * Co-supervised PhD research on tree species classification and VOC emission estimation from hyperspectral imagery.
-      * Uncovered pre-fire condition patterns through exploratory data analysis; developed anomaly detection and intensity forecasting tools in direct collaboration with operational firefighters.
-      * Integrated OCR, handwritten digit/character recognition, and BERT-based NER into a legacy C++ document management system; deployed via ONNX/TensorRT — CPU-only inference, no GPU dependency in production — health records extraction feature actively used by end customers.
-      * Presented a poster at AI4EO 2025 on the spatio-temporal fusion model; paper in progress.
-  - role: "Research Intern — Multispectral Image Processing"
+      * For a **European Space Agency**'s R&D project exploring future satellite mission capabilities :
+        * Led the work internally as **sole** Diginove **contributor and point-of-contact** for consortium partners
+        * Developed a conditional **GAN to enhance** thermal satellite imagery, from 1000m to 30m pixel **resolution** (×33), achieving SSIM ≈ 98.8% against high-resolution references
+        * Uncovered pre-fire condition patterns through exploratory data analysis; developed anomaly detection and intensity forecasting tools in direct **collaboration with firefighters**.
+        * Presented a poster at **AI4EO 2025** on the developed spatio-temporal fusion model.
+      * Built **end-to-end pipelines** for TB-scale multi-modal EO datasets (thermal, optical, SAR, hyperspectral), from API ingestion and format handling to physics-informed processing, ensuring alignment, fusion, and geometric consistency across satellite sources.
+      * Organized monthly **knowledge-sharing sessions** on cutting-edge methods (ViTs, VLMs, Foundation Models, LoRA...) and their EO applications (building characterization, oil-spill detection...)
+      * **Co-supervised PhD research** on tree species classification and VOC emission estimation from hyperspectral imagery.
+      * Authored and coordinated technical proposals for **funding programs** from **Horizon Europe** and **CNES**.
+      * Built and deployed an **AI pipeline to extract structured text** from digitized documents (handwritten and typed health records), integrated into an existing C++ software with low computing demands.
+
+  - role: "Research Intern - Multispectral Image Processing"
     org: "Synchromedia Lab - Montreal, Canada"
     start: "2024-01-01"
     end: "2024-08-31"
     summary: |
-      * Addressed a literature gap on unsupervised segmentation of multispectral ancient documents — a blind source separation problem requiring no pixel-level annotations, training signal derived entirely from self-supervised spectral reconstruction.
-      * Designed Attention–NMF: a hybrid CNN attention encoder combined with an NMF decoder, with a linear independence constraint on the latent space.
-      * Built the full experimental pipeline: dataset curation, model training, ablation studies, and systematic benchmarking against state-of-the-art approaches.
-      * Best results on MSTEx-2 (FM 84.29%, PSNR 21.33) across all compared methods; 50% model size reduction vs baselines, validated on 3 benchmarks.
-      * Authored a research paper submitted at ICASSP 2025; code available.
+      * Addressed a literature gap on **unsupervised segmentation** of multispectral images of ancient handwritten documents via Blind Source Separation - Spectral Unmixing.
+      * **Designed a novel hybrid model** combining a convolutional attention encoder with a Non-Negative Matrix Factorization (NMF) decoder, introducing a linear independence constraint on the latent space.
+      * Built the **full experimental pipeline**: dataset curation, model training, ablation studies, and benchmarking against state-of-the-art approaches.
+      * Authored a research paper submitted at **ICASSP 2025**; code available.
   - role: "Automation Intern - Robotics"
     org: "Bioderma Naos Group - Aix en Provence, France"
     start: "2021-05-01"
     end: "2021-08-31"
     summary: |
-      * Implemented a synchronization tool and real-time dashboard linking the production line to the palletizing robot system, using Python and OPC server communication between PLCs.
+      * Implemented a synchronization tool and **real-time dashboard** linking the production line to the **palletizing robot** system, using Python and OPC server communication between PLCs.
       * Improved production visibility and reduced operational friction, saving tens of minutes per day.
-      * Internship led to the creation of a follow-up position to continue the optimization work.
+      * Internship led to the creation of a **follow-up position** to continue the optimization work.
 skills:
   - name: "AI / ML"
     items:
