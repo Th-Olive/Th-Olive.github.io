@@ -30,23 +30,27 @@ highlights:
 
 ## Overview
 
-SENWISE is an ESA-funded project at Diginove aimed at enhancing the spatial resolution of thermal satellite imagery for environmental monitoring applications. The core challenge: Sentinel-3 provides thermal data at 1000 m resolution while Landsat captures optical imagery at 30 m — a ×33 resolution gap that limits fine-grained land surface temperature analysis. The output is a **daily high-resolution thermal time series** — directly simulating future LSTM mission capabilities for operational land surface temperature (LST) monitoring.
+**SENWISE** is an ESA-funded collaborative research project delivered through a consortium of partners. At Diginove, the work focused on the preparation of methods and use cases **ahead of the upcoming LSTM mission**, and the exploration of the future operational value of thermal Earth Observation for wildfire resilience.
 
 ## Challenges
 
-The properties that make this problem technically non-trivial:
-- **Spatial resolution mismatch (×33)**: the model must learn to generate fine spatial structure, not merely interpolate — requiring it to generalise across diverse land cover and seasonal conditions
-- **Sensor heterogeneity**: Sentinel-3 SLSTR (thermal) and Landsat OLI-TIRS (optical) have different spectral responses, viewing geometries, and noise profiles, requiring cross-instrument alignment
-- **Temporal misalignment**: acquisitions are not simultaneous; surface and atmospheric conditions change between passes, introducing domain shift the model must handle implicitly
-- **Scale**: TB-scale EO archive processed via GDAL/Rasterio pipelines handling multi-resolution raster mosaicking, reprojection, and temporal compositing
+A key challenge is that **current thermal satellite missions do not yet provide** the combination of high spatial and high temporal **resolution** expected from LSTM. Existing systems only cover part of that need: some observe the same area frequently but at coarse resolution, while others provide finer detail with much lower revisit frequency.
+
+The project therefore had to create a **realistic proxy** for those future capabilities in order to study their potential usefulness in operational contexts such as fire-related monitoring.
 
 ## Approach
 
-I designed and trained a **conditional GAN** that learns to generate high-resolution (30 m) thermal maps conditioned on:
-- Low-resolution Sentinel-3 SLSTR thermal input
-- High-resolution Landsat optical bands (as spatial guidance)
+To address this limitation, the project relied on the **combination of complementary satellite missions**: Sentinel-3 for its high revisit frequency and Landsat 8/9 for its higher spatial resolution.
 
-The generator uses a U-Net-style encoder-decoder with skip connections, while the discriminator enforces spectral and spatial consistency.
+The core method relied on a **GAN-based spatio-temporal fusion** to reconstruct finer-resolution thermal imagery while preserving temporal relevance.
+
+My contribution covered the full workflow:
+
+- building and curating **large multisensor datasets**,
+- designing preprocessing and data pipelines,
+- developing and evaluating fusion models,
+- benchmarking against existing spatio-temporal fusion methods,
+- and integrating the resulting model into internal tools for practical use.
 
 ## Results
 

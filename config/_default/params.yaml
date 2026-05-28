@@ -34,6 +34,8 @@ hugoblox:
     language_switcher: true
   copyright:
     notice: © {year} {name}
+    license:
+      type: none
   content:
     math:
       enable: false

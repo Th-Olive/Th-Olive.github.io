@@ -9,6 +9,8 @@ cascade:
   toc: false
   profile: false
   show_date_updated: false
+  pager: false
+  share: false
 
 design:
   # Section spacing

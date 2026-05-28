@@ -12,7 +12,7 @@ tech_stack:
   - TensorRT
   - BERT
   - OCR
-featured: true
+featured: false
 status: "In Production"
 role: "R&D AI Engineer at Diginove"
 duration: "Sept 2024 – present"

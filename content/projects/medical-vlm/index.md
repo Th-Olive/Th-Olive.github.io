@@ -8,7 +8,7 @@ tech_stack:
   - PyTorch
   - Vision-Language Models
   - Self-supervised Learning
-featured: true
+featured: false
 external_link: "https://github.com/Th-Olive/CT-CLIP"
 status: "Personal Study"
 role: "Independent"

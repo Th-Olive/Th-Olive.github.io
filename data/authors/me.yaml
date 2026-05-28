@@ -51,7 +51,7 @@ experience:
     start: "2024-01-01"
     end: "2024-08-31"
     summary: |
-      * Addressed a literature gap on **unsupervised segmentation** of multispectral images of ancient handwritten documents via Blind Source Separation - Spectral Unmixing.
+      * Addressed a literature gap on **unsupervised segmentation** for multispectral images of ancient handwritten documents via Blind Source Separation - Spectral Unmixing.
       * **Designed a novel hybrid model** combining a convolutional attention encoder with a Non-Negative Matrix Factorization (NMF) decoder, introducing a linear independence constraint on the latent space.
       * Built the **full experimental pipeline**: dataset curation, model training, ablation studies, and benchmarking against state-of-the-art approaches.
       * Authored a research paper submitted at **ICASSP 2025**; code available.
@@ -60,9 +60,9 @@ experience:
     start: "2021-05-01"
     end: "2021-08-31"
     summary: |
-      * Implemented a synchronization tool and **real-time dashboard** linking the production line to the **palletizing robot** system, using Python and OPC server communication between PLCs.
+      * Implemented a synchronization tool and a **real-time dashboard** linking the production line to the **palletizing robot** system, using Python and OPC server communication between PLCs.
       * Improved production visibility and reduced operational friction, saving tens of minutes per day.
-      * Internship led to the creation of a **follow-up position** to continue the optimization work.
+      * Internship led to the creation of a follow-up position to continue the optimization work.
 skills:
   - name: "AI / ML"
     items:
